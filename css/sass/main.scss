@@ -55,7 +55,7 @@ a {
     color: $links;
     text-decoration: none;
     border-bottom: 2px solid $links;
-    @ease(0.5s)
+    @include ease(0.5s);
     :hover {
         color: $links-hover;
         font-style: none;
@@ -76,10 +76,9 @@ button {
 }
 
 hr {
-    +skinny-hr {
+    @include skinny-hr;
     opacity: 0.3;
     }
-}
 
 .wrap {
     margin: 0 auto;
