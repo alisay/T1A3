@@ -1,0 +1,65 @@
+#splash {
+    margin: auto 0;
+    height: 100vh;
+    width: 45%;
+    overflow: hidden;
+    @media screen and (max-width: 736px){
+        width: 90%;
+    }
+}
+
+.big-link {
+    font-family: $font;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.5em;
+    height: auto;
+}
+
+.video{
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;  
+    iframe {
+        position: absolute;
+        width: 100%; 
+        height: 100%;  
+        top: 0; 
+        left: 0; 
+        border:0; 
+    }
+}   
+
+.tag {
+    padding: 0.25em 0em;
+    margin-right: 0.5em;
+    opacity: 0.6;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+    @media screen and (max-width: 736px){
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+.grid > figure {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.grid > figure > a > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+
+
+   
