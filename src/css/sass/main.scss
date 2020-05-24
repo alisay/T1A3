@@ -65,20 +65,108 @@ a {
     }
 }
 
-button {
-    padding: 20px;
-    border: 0px;
-    border-radius: 5px;
-    background: $white;
-    :hover {
-        box-shadow: 5px 5px $black;
-    }
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 hr {
     @include skinny-hr;
     opacity: 0.3;
     }
+
+header {
+    margin-top: 3rem;
+    font-family: $font;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    margin: 2rem 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    div { 
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1em;
+    }
+    h1,h2,h3 { 
+        margin: 1em 0em;
+        text-align: left;
+    }
+    p {
+        margin-bottom: 1em;
+        line-height: 1.8;
+        letter-spacing: 1.5px;
+        opacity: 0.8;
+    }
+    
+    .highlight {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 2rem auto;
+        opacity: 1;
+    }
+    blockquote {
+        background-color: $links;
+        color: $dark-grey;
+        padding: 2rem;
+        margin: 2rem 1rem 2rem 1rem;
+        border-radius: 3px;
+        a {
+            color: $black;
+        }
+        ul {
+            margin-top: 1rem;
+        }
+        li {
+            list-style: disc;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        overflow-x: auto;
+        th {
+            font-size: 0.9rem;
+        }
+        td, th {
+            padding: 2px 5px;
+            text-align: center;
+            border: 1px solid $links;
+        }
+    }
+    li {
+        line-height: 2;
+        padding-left: 0.4rem;
+        :last-child {
+            margin-bottom: 1rem;
+        }
+    ul {
+        list-style: disc outside;
+        padding-left: 2rem;
+    }
+    ol {
+        list-style: decimal outside;
+        padding-left: 2rem;
+    }
+}
+}
+
 
 .wrap {
     margin: 0 auto;
@@ -103,13 +191,6 @@ hr {
     bottom: 0;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .bottom-menu {
     display: flex;
     flex-direction: column;
@@ -119,7 +200,7 @@ hr {
     text-align: center;
 }
 
-.footer {
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -138,6 +219,7 @@ hr {
         display: contents;
     }
 }
+
 
 @import "elements";
 
