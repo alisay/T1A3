@@ -56,7 +56,7 @@ a {
 }
 a:hover {
   color: #fff;
-  font-style: none;
+  font-style: normal;
 }
 a:active {
   color: #cccccc;
